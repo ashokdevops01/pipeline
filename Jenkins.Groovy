@@ -1,8 +1,5 @@
-pipeline {
-    agent any
+node {
    
-    stages {
-
    stage('checkout') {
        git 'https://github.com/ashokdevops01/maven.git'
    }
