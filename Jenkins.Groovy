@@ -15,8 +15,5 @@ node {
        sh 'mvn package -f web/pom.xml'
        
    }
-   stage('archieve artifacts'){
-       archiveArtifacts '-f web/target/*.*ar'
-              
-   }
+  
 }
