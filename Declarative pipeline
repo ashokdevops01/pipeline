@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                git 'https://github.com/ashokdevops01/maven.git'
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ashokdevops01/maven.git']]])
     
             }
         }
